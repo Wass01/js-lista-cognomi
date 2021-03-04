@@ -12,4 +12,7 @@ do {
 
 listaCognomi.push(cognome);
 listaCognomi.sort();
-console.log(listaCognomi);
+
+for (var i = 0; i < listaCognomi.length; i++) {
+  document.getElementById('cognomi').innerHTML += "<li>" + listaCognomi[i] + "</li>";
+}
