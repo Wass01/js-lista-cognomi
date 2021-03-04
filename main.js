@@ -10,6 +10,7 @@ do {
   var cognome = prompt("Dimmi il tuo cognome:").trim();
 } while (!isNaN(cognome));
 
+cognome = cognome.charAt(0).toUpperCase() + cognome.slice(1);
 listaCognomi.push(cognome);
 listaCognomi.sort();
 
